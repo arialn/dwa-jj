@@ -1,0 +1,8 @@
+prefix=/home/z_lin/mapless/install
+
+Name: dwa_bug
+Description: Description of dwa_bug
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy

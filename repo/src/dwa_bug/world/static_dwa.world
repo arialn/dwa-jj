@@ -1,0 +1,60 @@
+include "p3at.inc"
+include "floorplan.inc"
+
+name                    "TangentBug Demo"
+interval_sim            100
+quit_time                 0
+resolution                0.01
+show_clock                0
+show_clock_interval     100
+threads                 12
+
+window
+( 
+  show_data 1   # shall we see sensor data?
+)
+
+# Load an environment bitmap
+floorplan
+( 
+  name "tutorial"
+  #bitmap "blank.png"
+  #bitmap "simple.png"
+  #bitmap "000.png"
+  bitmap "e2.png"
+  #bitmap "hp5.png"
+  #bitmap "720.png"
+  #bitmap "9.png"             #outdoor
+  #bitmap "7.png"
+  #bitmap "lab.png"
+  #bitmap  "c.png"             #c
+  #bitmap  "uc.png"             #uc
+  #bitmap "map.bmp"
+  #bitmap "o.png"
+  #bitmap "bug+vfh.png"
+
+  size [44.05000 24.800 1.000]
+  #size [64.00 36.00 1.000]
+  #size [4405.000 2480.000 1.000]
+  pose [0.000 0.000 0.000 0.000]
+)
+
+# Robots
+pioneer3at
+(
+  name "robot"
+  #pose [6.000 -4.000 0.000 45.000]
+  pose [-18.000 0.000 0.000 0.000]
+)
+
+#ob
+#(
+#  name "ob1"
+#  pose [-7 4 0 -90.0]
+#)
+
+#ob
+#(
+#  name "ob2"
+#  pose [7 -4 0 90.0]
+#)
