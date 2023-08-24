@@ -1,0 +1,375 @@
+a,0.1,20221223-1508
+61,204,269
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:07:25  Samples:  21856
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 55.295    CPU time: 160.844
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+55.294 main  dwa_bug_all.py:1929
+├─ 31.757 sleep  rospy/timer.py:90
+│     [36 frames hidden]  rospy, <built-in>, genpy, abc
+│        31.742 sleep  <built-in>:0
+├─ 21.543 dwa_control  dwa_bug_all.py:1382
+│  └─ 21.541 calc_final_input  dwa_bug_all.py:549
+│     ├─ 17.187 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 9.106 motion  dwa_bug_all.py:389
+│     │  │  ├─ 4.507 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.691 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 1.623 [self]  
+│     │  ├─ 7.194 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 0.860 [self]  
+│     ├─ 2.710 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.274 cdist  scipy/spatial/distance.py:2393
+│     │  │     [42 frames hidden]  scipy, <built-in>
+│     │  └─ 1.056 array  <built-in>:0
+│     │        [2 frames hidden]  <built-in>
+│     └─ 1.129 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 0.842 [self]  
+├─ 1.160 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.850 savefig  matplotlib/pyplot.py:974
+│        [544 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.800 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.588 savefig  matplotlib/pyplot.py:974
+         [742 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221223-1510
+504,228,268
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:08:37  Samples:  41985
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 101.978   CPU time: 300.188
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+101.977 main  dwa_bug_all.py:1929
+├─ 58.060 sleep  rospy/timer.py:90
+│     [36 frames hidden]  rospy, <built-in>, genpy, abc
+│        58.037 sleep  <built-in>:0
+├─ 41.819 dwa_control  dwa_bug_all.py:1382
+│  └─ 41.815 calc_final_input  dwa_bug_all.py:549
+│     ├─ 33.256 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 17.327 motion  dwa_bug_all.py:389
+│     │  │  ├─ 8.413 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 5.218 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 3.174 [self]  
+│     │  ├─ 14.193 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 1.692 [self]  
+│     ├─ 5.370 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 2.359 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 2.300 cdist  scipy/spatial/distance.py:2393
+│     │        [42 frames hidden]  scipy, <built-in>
+│     └─ 2.045 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 1.514 [self]  
+└─ 1.149 path_jerk_graph  dwa_bug_all.py:1397
+
+
+a,0.1,20221223-1511
+63,202,270
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:10:36  Samples:  21030
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 55.353    CPU time: 160.184
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+55.353 main  dwa_bug_all.py:1929
+├─ 33.324 sleep  rospy/timer.py:90
+│     [34 frames hidden]  rospy, <built-in>, genpy, abc
+│        33.304 sleep  <built-in>:0
+├─ 20.098 dwa_control  dwa_bug_all.py:1382
+│  └─ 20.097 calc_final_input  dwa_bug_all.py:549
+│     ├─ 16.031 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 8.730 motion  dwa_bug_all.py:389
+│     │  │  ├─ 4.498 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.349 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 1.587 [self]  
+│     │  ├─ 6.460 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 0.825 [self]  
+│     ├─ 2.405 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.111 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 0.998 cdist  scipy/spatial/distance.py:2393
+│     │        [42 frames hidden]  scipy, <built-in>
+│     └─ 1.123 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 0.813 [self]  
+├─ 1.117 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.826 savefig  matplotlib/pyplot.py:974
+│        [497 frames hidden]  matplotlib, <built-in>, <__array_func...
+└─ 0.803 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.589 savefig  matplotlib/pyplot.py:974
+         [672 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221223-1512
+63,212,270
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:11:47  Samples:  21561
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 56.372    CPU time: 163.428
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+56.372 main  dwa_bug_all.py:1929
+├─ 33.837 sleep  rospy/timer.py:90
+│     [23 frames hidden]  rospy, <built-in>, genpy, abc
+│        33.827 sleep  <built-in>:0
+├─ 20.581 dwa_control  dwa_bug_all.py:1382
+│  └─ 20.579 calc_final_input  dwa_bug_all.py:549
+│     ├─ 16.416 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 9.124 motion  dwa_bug_all.py:389
+│     │  │  ├─ 4.627 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.444 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 1.741 [self]  
+│     │  ├─ 6.415 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 0.862 [self]  
+│     ├─ 2.547 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.357 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 0.925 cdist  scipy/spatial/distance.py:2393
+│     │        [42 frames hidden]  scipy, <built-in>
+│     └─ 1.078 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 0.784 [self]  
+├─ 1.122 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.831 savefig  matplotlib/pyplot.py:974
+│        [526 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.816 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.577 savefig  matplotlib/pyplot.py:974
+         [740 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221223-1513
+62,221,271
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:12:59  Samples:  21736
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 57.320    CPU time: 165.938
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+57.319 main  dwa_bug_all.py:1929
+├─ 34.577 sleep  rospy/timer.py:90
+│     [21 frames hidden]  rospy, <built-in>, genpy
+│        34.570 sleep  <built-in>:0
+├─ 20.745 dwa_control  dwa_bug_all.py:1382
+│  └─ 20.745 calc_final_input  dwa_bug_all.py:549
+│     ├─ 16.368 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 8.881 motion  dwa_bug_all.py:389
+│     │  │  ├─ 4.518 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.397 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 1.681 [self]  
+│     │  ├─ 6.681 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 0.796 [self]  
+│     ├─ 2.627 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.286 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 0.990 cdist  scipy/spatial/distance.py:2393
+│     │        [42 frames hidden]  scipy, <built-in>
+│     └─ 1.188 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 0.868 [self]  
+├─ 1.159 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.838 savefig  matplotlib/pyplot.py:974
+│        [546 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.817 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.584 savefig  matplotlib/pyplot.py:974
+         [748 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221223-1517
+109,1521,292
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:14:12  Samples:  78586
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 194.221   CPU time: 508.311
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+194.220 main  dwa_bug_all.py:1929
+├─ 115.535 sleep  rospy/timer.py:90
+│     [58 frames hidden]  rospy, <built-in>, genpy, abc
+│        115.467 sleep  <built-in>:0
+└─ 76.514 dwa_control  dwa_bug_all.py:1382
+   └─ 76.506 calc_final_input  dwa_bug_all.py:549
+      ├─ 60.707 calc_trajectory  dwa_bug_all.py:517
+      │  ├─ 33.209 motion  dwa_bug_all.py:389
+      │  │  ├─ 16.973 array  <built-in>:0
+      │  │  │     [2 frames hidden]  <built-in>
+      │  │  ├─ 8.903 dot  <__array_function__ internals>:2
+      │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+      │  │  └─ 6.350 [self]  
+      │  ├─ 24.582 vstack  <__array_function__ internals>:2
+      │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+      │  └─ 2.865 [self]  
+      ├─ 9.646 calc_obstacle_cost  dwa_bug_all.py:786
+      │  ├─ 4.638 array  <built-in>:0
+      │  │     [2 frames hidden]  <built-in>
+      │  └─ 3.849 cdist  scipy/spatial/distance.py:2393
+      │        [42 frames hidden]  scipy, <built-in>
+      └─ 4.027 a_linear_velocity_generator  dwa_bug_all.py:402
+         └─ 2.946 [self]  
+
+
+a,0.1,20221223-1521
+63,225,1711
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:17:47  Samples:  85350
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 201.869   CPU time: 598.649
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+201.868 main  dwa_bug_all.py:1924
+├─ 115.024 sleep  rospy/timer.py:90
+│     [64 frames hidden]  rospy, <built-in>, genpy, abc
+│        114.940 sleep  <built-in>:0
+└─ 84.660 dwa_control  dwa_bug_all.py:1377
+   └─ 84.655 calc_final_input  dwa_bug_all.py:549
+      ├─ 66.496 calc_trajectory  dwa_bug_all.py:517
+      │  ├─ 35.558 motion  dwa_bug_all.py:389
+      │  │  ├─ 17.743 array  <built-in>:0
+      │  │  │     [2 frames hidden]  <built-in>
+      │  │  ├─ 10.216 dot  <__array_function__ internals>:2
+      │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+      │  │  └─ 6.342 [self]  
+      │  ├─ 27.442 vstack  <__array_function__ internals>:2
+      │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+      │  └─ 3.440 [self]  
+      ├─ 11.530 calc_obstacle_cost  dwa_bug_all.py:786
+      │  ├─ 5.932 array  <built-in>:0
+      │  │     [2 frames hidden]  <built-in>
+      │  └─ 4.307 cdist  scipy/spatial/distance.py:2393
+      │        [42 frames hidden]  scipy, <built-in>
+      └─ 4.360 a_linear_velocity_generator  dwa_bug_all.py:402
+         └─ 3.163 [self]  
+
+
+a,0.1,20221223-1522
+62,410,138
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:21:30  Samples:  27924
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 62.825    CPU time: 92.705
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+62.824 main  dwa_bug_all.py:1924
+├─ 33.751 sleep  rospy/timer.py:90
+│     [35 frames hidden]  rospy, <built-in>, genpy, abc
+│        33.731 sleep  <built-in>:0
+├─ 27.155 dwa_control  dwa_bug_all.py:1377
+│  └─ 27.153 calc_final_input  dwa_bug_all.py:549
+│     ├─ 22.184 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 12.211 motion  dwa_bug_all.py:389
+│     │  │  ├─ 6.165 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 3.428 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 2.290 [self]  
+│     │  ├─ 8.797 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 1.152 [self]  
+│     ├─ 2.960 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.410 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 1.142 cdist  scipy/spatial/distance.py:2393
+│     │        [42 frames hidden]  scipy, <built-in>
+│     └─ 1.416 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 1.078 [self]  
+├─ 1.097 path_jerk_graph  dwa_bug_all.py:1392
+│  └─ 0.812 savefig  matplotlib/pyplot.py:974
+│        [518 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.794 vaj_graph  dwa_bug_all.py:1437
+
+
+a,0.1,20221223-1525
+226,834,264
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:22:49  Samples:  63273
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 134.338   CPU time: 164.686
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+134.337 main  dwa_bug_all.py:1924
+├─ 70.277 sleep  rospy/timer.py:90
+│     [47 frames hidden]  rospy, <built-in>, genpy, abc
+│        70.233 sleep  <built-in>:0
+└─ 62.003 dwa_control  dwa_bug_all.py:1377
+   └─ 62.002 calc_final_input  dwa_bug_all.py:549
+      ├─ 51.298 calc_trajectory  dwa_bug_all.py:517
+      │  ├─ 27.851 motion  dwa_bug_all.py:389
+      │  │  ├─ 14.162 array  <built-in>:0
+      │  │  │     [2 frames hidden]  <built-in>
+      │  │  ├─ 7.840 dot  <__array_function__ internals>:2
+      │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+      │  │  └─ 4.962 [self]  
+      │  ├─ 20.830 vstack  <__array_function__ internals>:2
+      │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+      │  └─ 2.565 [self]  
+      ├─ 5.604 calc_obstacle_cost  dwa_bug_all.py:786
+      │  ├─ 2.484 cdist  scipy/spatial/distance.py:2393
+      │  │     [42 frames hidden]  scipy, <built-in>
+      │  └─ 2.349 array  <built-in>:0
+      │        [2 frames hidden]  <built-in>
+      └─ 3.568 a_linear_velocity_generator  dwa_bug_all.py:402
+         └─ 2.651 [self]  
+
+
+a,0.1,20221223-1526
+63,199,267
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15:25:22  Samples:  21110
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 54.760    CPU time: 159.146
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+54.760 main  dwa_bug_all.py:1924
+├─ 32.543 sleep  rospy/timer.py:90
+│     [31 frames hidden]  rospy, <built-in>, genpy, abc
+│        32.532 sleep  <built-in>:0
+├─ 20.274 dwa_control  dwa_bug_all.py:1377
+│  └─ 20.274 calc_final_input  dwa_bug_all.py:549
+│     ├─ 16.252 calc_trajectory  dwa_bug_all.py:517
+│     │  ├─ 8.779 motion  dwa_bug_all.py:389
+│     │  │  ├─ 4.381 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.442 dot  <__array_function__ internals>:2
+│     │  │  │     [6 frames hidden]  <__array_function__ internals>, <buil...
+│     │  │  └─ 1.659 [self]  
+│     │  ├─ 6.641 vstack  <__array_function__ internals>:2
+│     │  │     [34 frames hidden]  <__array_function__ internals>, numpy...
+│     │  └─ 0.818 [self]  
+│     ├─ 2.338 calc_obstacle_cost  dwa_bug_all.py:786
+│     │  ├─ 1.031 array  <built-in>:0
+│     │  │     [2 frames hidden]  <built-in>
+│     │  └─ 0.994 cdist  scipy/spatial/distance.py:2393
+│     │        [38 frames hidden]  scipy, <built-in>
+│     └─ 1.139 a_linear_velocity_generator  dwa_bug_all.py:402
+│        └─ 0.836 [self]  
+├─ 1.131 path_jerk_graph  dwa_bug_all.py:1392
+│  └─ 0.838 savefig  matplotlib/pyplot.py:974
+│        [561 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.796 vaj_graph  dwa_bug_all.py:1437
+   └─ 0.578 savefig  matplotlib/pyplot.py:974
+         [729 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+

@@ -1,0 +1,40 @@
+dwa,0.1,20230222-1310
+71,199,153
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 13時09分30秒 Samples:  22593
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 61.757    CPU time: 34.476
+/   _/                      v4.1.1
+
+Program: dwa_bug_all2.py
+
+61.757 main  dwa_bug_all2.py:1918
+├─ 21.402 dwa_control  dwa_bug_all2.py:1323
+│  └─ 21.401 calc_final_input  dwa_bug_all2.py:514
+│     ├─ 17.746 calc_trajectory  dwa_bug_all2.py:490
+│     │  ├─ 9.206 motion  dwa_bug_all2.py:386
+│     │  │  ├─ 4.300 array  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  ├─ 2.946 dot  <built-in>:0
+│     │  │  │     [2 frames hidden]  <built-in>
+│     │  │  └─ 1.643 [self]  
+│     │  ├─ 7.459 vstack  numpy/core/shape_base.py:229
+│     │  │     [22 frames hidden]  numpy, <built-in>
+│     │  └─ 0.953 [self]  
+│     └─ 3.038 calc_obstacle_cost  dwa_bug_all2.py:732
+│        ├─ 2.002 cdist  scipy/spatial/distance.py:2412
+│        │     [44 frames hidden]  scipy, <built-in>, numpy
+│        └─ 0.657 array  <built-in>:0
+│              [2 frames hidden]  <built-in>
+├─ 20.736 sleep  rospy/timer.py:90
+│     [27 frames hidden]  rospy, threading, <built-in>, genpy, abc
+│        20.721 lock.acquire  <built-in>:0
+├─ 10.253 vaj_graph  dwa_bug_all2.py:1383
+│  └─ 9.579 show  matplotlib/pyplot.py:333
+│        [1287 frames hidden]  matplotlib, mpl_toolkits, pyparsing, ...
+├─ 7.675 show  matplotlib/pyplot.py:333
+│     [736 frames hidden]  matplotlib, <built-in>, numpy, inspec...
+└─ 1.638 path_jerk_graph  dwa_bug_all2.py:1338
+   └─ 1.310 savefig  matplotlib/pyplot.py:963
+         [1098 frames hidden]  matplotlib, <built-in>, numpy, enum, ...
+
+

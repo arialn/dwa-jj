@@ -1,0 +1,266 @@
+a,0.1,20221222-1817
+39,189,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:16:45  Samples:  2192
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 27.841    CPU time: 71.298
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+27.840 main  dwa_bug_all.py:1929
+├─ 24.447 sleep  rospy/timer.py:90
+│     [17 frames hidden]  rospy, <built-in>, genpy
+│        24.443 sleep  <built-in>:0
+├─ 1.435 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.434 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.213 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.336 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.299 [self]  
+├─ 1.111 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.824 savefig  matplotlib/pyplot.py:974
+│        [524 frames hidden]  matplotlib, <built-in>, abc, contextl...
+└─ 0.827 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.586 savefig  matplotlib/pyplot.py:974
+         [739 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1817
+40,198,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:17:27  Samples:  2287
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.891    CPU time: 73.892
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.891 main  dwa_bug_all.py:1929
+├─ 25.361 sleep  rospy/timer.py:90
+│     [12 frames hidden]  rospy, <built-in>, genpy
+│        25.358 sleep  <built-in>:0
+├─ 1.525 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.525 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.290 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.351 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.323 [self]  
+├─ 1.109 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.819 savefig  matplotlib/pyplot.py:974
+│        [522 frames hidden]  matplotlib, <built-in>, re, numpy, <_...
+└─ 0.880 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.581 savefig  matplotlib/pyplot.py:974
+         [678 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1818
+40,192,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:18:11  Samples:  2466
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.269    CPU time: 72.565
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.268 main  dwa_bug_all.py:1929
+├─ 24.573 sleep  rospy/timer.py:90
+│     [20 frames hidden]  rospy, <built-in>, genpy
+│        24.567 sleep  <built-in>:0
+├─ 1.715 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.715 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.463 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.461 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.344 [self]  
+├─ 1.134 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.822 savefig  matplotlib/pyplot.py:974
+│        [534 frames hidden]  matplotlib, <built-in>, <__array_func...
+└─ 0.832 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.590 savefig  matplotlib/pyplot.py:974
+         [693 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1819
+39,194,30
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:18:54  Samples:  2344
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.175    CPU time: 72.220
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.174 main  dwa_bug_all.py:1929
+├─ 24.528 sleep  rospy/timer.py:90
+│     [32 frames hidden]  rospy, <built-in>, genpy, abc
+│        24.519 sleep  <built-in>:0
+├─ 1.658 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.658 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.439 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.370 [self]  
+│        ├─ 0.358 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.293 cdist  scipy/spatial/distance.py:2393
+│              [42 frames hidden]  scipy, <built-in>
+├─ 1.138 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.827 savefig  matplotlib/pyplot.py:974
+│        [551 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.834 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.584 savefig  matplotlib/pyplot.py:974
+         [752 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1820
+38,194,30
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:19:36  Samples:  2157
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.035    CPU time: 71.689
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.035 main  dwa_bug_all.py:1929
+├─ 24.683 sleep  rospy/timer.py:90
+│     [23 frames hidden]  rospy, <built-in>, genpy
+│        24.673 sleep  <built-in>:0
+├─ 1.410 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.410 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.198 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.329 [self]  
+│        └─ 0.315 array  <built-in>:0
+│              [2 frames hidden]  <built-in>
+├─ 1.111 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.816 savefig  matplotlib/pyplot.py:974
+│        [539 frames hidden]  matplotlib, <built-in>, contextlib, e...
+└─ 0.822 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.581 savefig  matplotlib/pyplot.py:974
+         [707 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1820
+39,191,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:20:19  Samples:  2195
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.063    CPU time: 71.779
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.062 main  dwa_bug_all.py:1929
+├─ 24.665 sleep  rospy/timer.py:90
+│     [25 frames hidden]  rospy, <built-in>, genpy, abc
+│        24.656 sleep  <built-in>:0
+├─ 1.423 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.423 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.207 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.351 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.315 [self]  
+├─ 1.106 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.816 savefig  matplotlib/pyplot.py:974
+│        [538 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.855 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.588 savefig  matplotlib/pyplot.py:974
+         [663 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1821
+39,199,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:21:01  Samples:  2272
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.921    CPU time: 74.104
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.920 main  dwa_bug_all.py:1929
+├─ 25.383 sleep  rospy/timer.py:90
+│     [28 frames hidden]  rospy, <built-in>, genpy, abc
+│        25.375 sleep  <built-in>:0
+├─ 1.502 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.502 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.288 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.384 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.338 [self]  
+├─ 1.129 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.824 savefig  matplotlib/pyplot.py:974
+│        [502 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.889 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.588 savefig  matplotlib/pyplot.py:974
+         [689 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1822
+40,193,31
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:21:45  Samples:  2450
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.261    CPU time: 72.613
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.261 main  dwa_bug_all.py:1929
+├─ 24.603 sleep  rospy/timer.py:90
+│     [25 frames hidden]  rospy, <built-in>, genpy
+│        24.594 sleep  <built-in>:0
+├─ 1.686 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.686 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.430 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.431 array  <built-in>:0
+│        │     [2 frames hidden]  <built-in>
+│        └─ 0.312 [self]  
+├─ 1.113 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.819 savefig  matplotlib/pyplot.py:974
+│        [544 frames hidden]  matplotlib, <built-in>, re, contextli...
+└─ 0.846 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.580 savefig  matplotlib/pyplot.py:974
+         [694 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+
+a,0.1,20221222-1825
+1999,0,0
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:22:27  Samples:  23822
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 201.896   CPU time: 541.292
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+201.895 main  dwa_bug_all.py:1929
+├─ 177.680 sleep  rospy/timer.py:90
+│     [30 frames hidden]  rospy, <built-in>, genpy
+│        177.667 sleep  <built-in>:0
+└─ 22.106 dwa_control  dwa_bug_all.py:1382
+   └─ 22.106 calc_final_input  dwa_bug_all.py:549
+      └─ 20.289 calc_obstacle_cost3  dwa_bug_all.py:1032
+         ├─ 10.253 array  <built-in>:0
+         │     [2 frames hidden]  <built-in>
+         └─ 3.716 [self]  
+
+
+a,0.1,20221222-1826
+38,194,32
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 18:26:05  Samples:  2181
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 28.279    CPU time: 72.426
+/   _/                      v4.0.3
+
+Program: dwa_bug_all.py
+
+28.278 main  dwa_bug_all.py:1929
+├─ 24.863 sleep  rospy/timer.py:90
+│     [15 frames hidden]  rospy, <built-in>, genpy
+│        24.859 sleep  <built-in>:0
+├─ 1.433 dwa_control  dwa_bug_all.py:1382
+│  └─ 1.433 calc_final_input  dwa_bug_all.py:549
+│     └─ 1.205 calc_obstacle_cost3  dwa_bug_all.py:1032
+│        ├─ 0.317 [self]  
+│        └─ 0.307 array  <built-in>:0
+│              [2 frames hidden]  <built-in>
+├─ 1.144 path_jerk_graph  dwa_bug_all.py:1397
+│  └─ 0.815 savefig  matplotlib/pyplot.py:974
+│        [508 frames hidden]  matplotlib, <built-in>, contextlib, <...
+└─ 0.833 vaj_graph  dwa_bug_all.py:1442
+   └─ 0.584 savefig  matplotlib/pyplot.py:974
+         [715 frames hidden]  matplotlib, PIL, <built-in>, mpl_tool...
+
+

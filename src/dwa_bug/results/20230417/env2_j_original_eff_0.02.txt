@@ -1,0 +1,30 @@
+j,0.1,20230417-1449
+42,188,61
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 14:49:08  Samples:  4471
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 42.120    CPU time: 113.797
+/   _/                      v4.4.0
+
+Program: dwa_bug_all.py
+
+42.120 main  dwa_bug_all.py:1975
+├─ 25.890 Rate.sleep  rospy/timer.py:90
+│     [21 frames hidden]  rospy, threading, <built-in>, genpy
+├─ 6.292 vaj_graph  dwa_bug_all.py:1440
+│  └─ 5.794 show  matplotlib/pyplot.py:342
+│        [1317 frames hidden]  matplotlib, tkinter, mpl_toolkits, py...
+├─ 5.837 show  matplotlib/pyplot.py:342
+│     [850 frames hidden]  matplotlib, tkinter, <built-in>, <__a...
+├─ 3.065 dwa_control  dwa_bug_all.py:1380
+│  └─ 3.064 calc_final_input  dwa_bug_all.py:552
+│     └─ 1.979 calc_trajectory  dwa_bug_all.py:520
+│        ├─ 1.098 motion  dwa_bug_all.py:392
+│        │  └─ 0.523 array  None
+│        │        [2 frames hidden]  <built-in>
+│        └─ 0.780 vstack  <__array_function__ internals>:2
+│              [34 frames hidden]  <__array_function__ internals>, numpy...
+└─ 0.926 path_jerk_graph  dwa_bug_all.py:1395
+   └─ 0.660 savefig  matplotlib/pyplot.py:974
+         [594 frames hidden]  matplotlib, <built-in>, contextlib, <...
+
+

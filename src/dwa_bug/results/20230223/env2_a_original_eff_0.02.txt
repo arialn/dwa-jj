@@ -1,0 +1,39 @@
+a,0.1,20230223-1339
+28,173,28
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 13時36分36秒 Samples:  8383
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 22.791    CPU time: 9.195
+/   _/                      v4.1.1
+
+Program: dwa_bug_all2.py
+
+22.790 main  dwa_bug_all2.py:1674
+├─ 14.570 sleep  rospy/timer.py:90
+│     [28 frames hidden]  rospy, threading, <built-in>, genpy, abc
+│        14.560 lock.acquire  <built-in>:0
+└─ 8.198 dwa_control  dwa_bug_all2.py:1273
+   └─ 8.197 calc_final_input  dwa_bug_all2.py:506
+      ├─ 3.151 calc_obstacle_cost3  dwa_bug_all2.py:946
+      │  ├─ 0.895 [self]  
+      │  ├─ 0.873 cdist  scipy/spatial/distance.py:2412
+      │  │     [46 frames hidden]  scipy, numpy, <built-in>
+      │  └─ 0.464 array  <built-in>:0
+      │        [2 frames hidden]  <built-in>
+      ├─ 3.033 calc_trajectory  dwa_bug_all2.py:493
+      │  ├─ 1.640 motion  dwa_bug_all2.py:393
+      │  │  ├─ 0.763 array  <built-in>:0
+      │  │  │     [2 frames hidden]  <built-in>
+      │  │  ├─ 0.477 dot  <built-in>:0
+      │  │  │     [2 frames hidden]  <built-in>
+      │  │  └─ 0.328 [self]  
+      │  └─ 1.162 vstack  numpy/core/shape_base.py:229
+      │        [22 frames hidden]  numpy, <built-in>
+      ├─ 1.234 calc_obstacle_cost  dwa_bug_all2.py:712
+      │  ├─ 0.519 cdist  scipy/spatial/distance.py:2412
+      │  │     [44 frames hidden]  scipy, <built-in>, numpy
+      │  └─ 0.504 array  <built-in>:0
+      │        [2 frames hidden]  <built-in>
+      ├─ 0.320 calc_to_goal_cost  dwa_bug_all2.py:1219
+      └─ 0.293 acceleration_to_velocity  dwa_bug_all2.py:404
+
+

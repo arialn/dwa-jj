@@ -1,0 +1,21 @@
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 15時30分56秒 Samples:  6450
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 19.303    CPU time: 7.093
+/   _/                      v4.1.1
+
+Program: dwa_bug_all.py
+
+19.303 main  dwa_bug_all.py:1558
+├─ 12.991 sleep  rospy/timer.py:90
+│     [30 frames hidden]  rospy, <built-in>, genpy
+│        12.983 sleep  <built-in>:0
+└─ 6.291 dwa_control  dwa_bug_all.py:1063
+   └─ 6.291 calc_final_input  dwa_bug_all.py:588
+      └─ 5.923 calc_obstacle_cost2  dwa_bug_all.py:801
+         ├─ 4.600 [self]  
+         ├─ 0.467 abs  <built-in>:0
+         │     [2 frames hidden]  <built-in>
+         └─ 0.255 sqrt  <built-in>:0
+               [2 frames hidden]  <built-in>
+
+
