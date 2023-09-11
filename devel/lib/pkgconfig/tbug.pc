@@ -1,8 +1,0 @@
-prefix=/home/z_lin/mapless/devel
-
-Name: tbug
-Description: Description of tbug
-Version: 0.0.0
-Cflags: -I/home/z_lin/mapless/devel/include
-Libs: -L${prefix}/lib 
-Requires: actionlib_msgs

@@ -1,2 +1,0 @@
-set(tbug_MESSAGE_FILES "/home/z_lin/mapless/devel/share/tbug/msg/goalStatusAction.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusActionGoal.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusActionResult.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusActionFeedback.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusGoal.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusResult.msg;/home/z_lin/mapless/devel/share/tbug/msg/goalStatusFeedback.msg")
-set(tbug_SERVICE_FILES "")
