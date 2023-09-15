@@ -5,6 +5,9 @@
     mkdir -p /catkin_ws/src
     cd /catkin_ws/src
     git clone git@github.com:arialn/dwa-jj.git
+    cd dwa-jj
+    python setup.py install
+    cd ..
     cd ..
     catkin_make
     source devel/setup.bash
