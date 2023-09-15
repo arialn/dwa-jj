@@ -33,8 +33,6 @@ from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 
 from matplotlib.ticker import MultipleLocator
-# from sympy import *
-from pathsolver import solver
 from geometry_msgs.msg import Twist, PointStamped
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan

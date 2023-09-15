@@ -11,6 +11,7 @@ import matplotlib as mpl
 import sympy
 import mpmath as mp
 import random
+import heapq
 
 from scipy.spatial.transform import Rotation as R
 from scipy.spatial import distance
@@ -20,8 +21,6 @@ from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 
 from matplotlib.ticker import MultipleLocator
-# from sympy import *
-from pathsolver import solver
 from geometry_msgs.msg import Twist, PointStamped
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
@@ -153,7 +152,7 @@ class Config:
 		self.current_w = msg.twist.twist.angular.z
 
 	def aStar(self):
-		solve = solver()
+		solve = Solver()
 		img = self.__readMap()
 		block_img = ~img
 		grid = block_img
@@ -196,8 +195,6 @@ class Config:
 			ax.scatter(end[1], end[0])
 			plt.show()
 		self.path = path
-
-	# return path
 
 	def motion(self):
 		# x = [x(m), y(m), theta(rad), v(m/s), omega(rad/s)]
@@ -544,3 +541,50 @@ class AfterProcess(Config):
 			f.close()
 		print("frames =", len(self.cal_time1))
 		print("average process time =", np.nanmean(self.cal_time1))
+
+
+class Solver:
+	def __init__(self):
+		pass
+
+	def hue(self, a, b):
+		return np.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
+
+	def astar(self, start, end, grid):
+		neighbours = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+		heap = []
+		closed_list = set()
+		gscore = {start: 0}
+		fscore = {start: self.hue(start, end)}
+		parent = {}
+		heapq.heappush(heap, (fscore[start], start))
+		while heap:
+			current = heapq.heappop(heap)[1]
+			closed_list.add(current)
+			if (current == end):
+				data = []
+				while current in parent:
+					data.append(current)
+					current = parent[current]
+				return data
+
+			for i, j in neighbours:
+				neighbour = current[0] + i, current[1] + j
+				tgscore = gscore[current] + self.hue(current, neighbour)
+				if 0 <= neighbour[0] < grid.shape[0]:
+					if 0 <= neighbour[1] < grid.shape[1]:
+						if grid[neighbour[0]][neighbour[1]]:
+							continue
+					else:
+						continue
+				else:
+					continue
+				if neighbour in closed_list and tgscore >= gscore.get(neighbour, 0):
+					continue
+				if tgscore < gscore.get(neighbour, 0) or neighbour not in [i[1] for i in heap]:
+					parent[neighbour] = current
+					gscore[neighbour] = tgscore
+					fscore[neighbour] = tgscore + self.hue(neighbour, end)
+					heapq.heappush(heap, (fscore[neighbour], neighbour))
+
+		return False
