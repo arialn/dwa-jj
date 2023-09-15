@@ -4,32 +4,20 @@ import rospy
 import math
 import numpy as np
 import os
-import datetime
 import time
-import argparse
-import matplotlib as mpl
-import sympy
-import mpmath as mp
-import random
 import heapq
 
 from scipy.spatial.transform import Rotation as R
 from scipy.spatial import distance
-from scipy.interpolate import interp1d, PchipInterpolator
-
 from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
-
-from matplotlib.ticker import MultipleLocator
-from geometry_msgs.msg import Twist, PointStamped
+from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 from mpl_toolkits.axisartist.parasite_axes import HostAxes, ParasiteAxes
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-from mpl_toolkits.axes_grid1.inset_locator import mark_inset, inset_axes
 from pyinstrument import Profiler
 from colorama import Fore, Style
-import PIL.Image as Image
 
 class Config:
 	# simulation parameters
@@ -126,8 +114,8 @@ class Config:
 
 		self.type = "a"  # dwa a a2 j
 		self.map_name = "e2"
-		self.map = "../world/" + self.map_name + ".png"
-		self.result_path = "../results/{}/{}/{}/".format(time.strftime("%Y%m%d", time.localtime()), self.type,
+		self.map = os.path.dirname(os.path.dirname(__file__))+"/world/" + self.map_name + ".png"
+		self.result_path = os.path.dirname(os.path.dirname(__file__))+"/results/{}/{}/{}/".format(time.strftime("%Y%m%d", time.localtime()), self.type,
 														 self.map_name)
 
 	def __readMap(self):

@@ -11,7 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   rospy
   std_msgs
-  turtlebot_gazebo
 )
 
 ## System dependencies are found with CMake's conventions

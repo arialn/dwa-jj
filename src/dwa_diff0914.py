@@ -11,37 +11,24 @@
 # Implentation based off Fox et al."s paper, The Dynamic Window Approach to
 # Collision Avoidance (1997).
 
-import cv2
 import rospy
 import math
 import numpy as np
 import os
-import datetime
 import time
 import argparse
-import matplotlib as mpl
-import sympy
-import mpmath as mp
-import random
+
 import helper
 
 from scipy.spatial.transform import Rotation as R
 from scipy.spatial import distance
-from scipy.interpolate import interp1d, PchipInterpolator
-
 from matplotlib import pyplot as plt
-from matplotlib.colors import ListedColormap, LinearSegmentedColormap
-
-from matplotlib.ticker import MultipleLocator
-from geometry_msgs.msg import Twist, PointStamped
+from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 from mpl_toolkits.axisartist.parasite_axes import HostAxes, ParasiteAxes
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-from mpl_toolkits.axes_grid1.inset_locator import mark_inset, inset_axes
 from pyinstrument import Profiler
 from colorama import Fore, Style
-import PIL.Image as Image
 
 # Begin DWA calculations
 def dwaControl(config, obs, speed):
@@ -452,7 +439,7 @@ def dwaControl(config, obs, speed):
 			# togoal1 = math.sqrt((config.localX - config.x) ** 2 + (config.localY - config.y) ** 2)
 			to_end = math.sqrt((config.x - traj[-1, 0]) ** 2 + (config.y - traj[-1, 1]) ** 2)
 			if config.type == "dwa" or "a":
-				if config.map == "../world/1183.png":
+				if config.map == os.path.dirname(os.path.dirname(__file__))+"/world/e3.png":
 					cost = 1 - (remain_end / 5)
 				else:
 					cost = 1 - (remain_end / 5)
@@ -675,7 +662,7 @@ def main():
 	config.jw_weight = args.jw
 	print(config.jv_weight, config.jw_weight)
 
-	if config.map == "../world/1180.png":
+	if config.map == os.path.dirname(os.path.dirname(__file__))+"/world/1180.png":
 		pub = rospy.Publisher("robot_0/cmd_vel", Twist, queue_size=1, tcp_nodelay=True)
 		subOdom = rospy.Subscriber("robot_0/odom", Odometry, config.assignOdomCoords, queue_size=1, buff_size=2 ** 24)
 		subLaser = rospy.Subscriber("robot_0/base_scan", LaserScan, obs.assignObs, config, queue_size=1,
