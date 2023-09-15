@@ -6,7 +6,7 @@
     cd /catkin_ws/src
     git clone git@github.com:arialn/dwa-jj.git
     cd dwa-jj
-    python setup.py install
+    python setup.py install clean
     cd ..
     cd ..
     catkin_make
